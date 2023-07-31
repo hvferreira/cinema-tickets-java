@@ -1,15 +1,11 @@
 CINEMA TICKETS
 
-Objective
---
+# Objective
+
 Demonstrate code and approach to a given problem. Implementation of a cinema ticket app, using Java 17.
 
-## Requirements
-- Java 17
-- IntelliJ
-
 ## Business Rules
---
+
 - There are 3 types of tickets i.e., Infant, Child, and Adult.
 - The ticket prices are based on the type of ticket (see table below).
 - The ticket purchaser declares how many and what type of tickets they want to buy.
@@ -28,13 +24,13 @@ Demonstrate code and approach to a given problem. Implementation of a cinema tic
 - There is an existing `SeatReservationService` responsible for reserving seats.
 
 ## Constraints
---
+
 - The TicketService interface CANNOT be modified.
 - The code in the thirdparty. * packages CANNOT be modified.
 - The `TicketTypeRequest` SHOULD be an immutable object.
 
 ## Assumptions
---
+
 - All accounts with an id greater than zero are valid. They also have sufficient funds to pay for any tickets.
 - The `TicketPaymentService` implementation is an external provider with no defects. No need to worry about how the actual payment happens.
 - The payment will always go through once a payment request has been made to the `TicketPaymentService`.
@@ -42,7 +38,7 @@ Demonstrate code and approach to a given problem. Implementation of a cinema tic
 - The seat will always be reserved once a reservation request has been made to the `SeatReservationService`.
 
 ## Task
---
+
 Provide a working implementation of a `TicketService` that:
 - Consider the above objective, business rules, constraints & assumptions.
 - Calculates the correct amount for the requested tickets and makes a payment request to the `TicketPaymentService`.
@@ -50,6 +46,6 @@ Provide a working implementation of a `TicketService` that:
 - Rejects any invalid ticket purchase requests. Identify what should be deemed as an invalid purchase request.
 
 ## Future Thoughts
---
-- Convert into a Spring Boot Service.
-- Add more features to Log in, Payment services and Seat Reservations.
+
+- Add front-end
+- Add room size and empty seats
